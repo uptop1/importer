@@ -10,8 +10,14 @@ use PHPUnit\Framework\TestCase;
 
 class JSONReaderTest extends TestCase
 {
+    /**
+     * @var \org\bovigo\vfs\vfsStreamDirectory
+     */
     private $root;
 
+    /**
+     * Set filesystem mock before test cases
+     */
     public function setUp() {
         $this->root = vfsStream::setup('tmp');
     }
@@ -36,6 +42,10 @@ class JSONReaderTest extends TestCase
         $this->assertEquals($rowsCount, $data->count());
     }
 
+    /**
+     * Provides test cases for JSON read (testReadFromJSON)
+     * @return array
+     */
     public function providerJSON()
     {
         return [

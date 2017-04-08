@@ -54,6 +54,10 @@ class CampaignsImporterTest extends TestCase
         $this->assertEquals($rowsCount, $data->count());
     }
 
+    /**
+     * Provides test cases for both CSV and JSON read (testRead)
+     * @return array
+     */
     public function providerCSVJSON()
     {
         return [
@@ -101,6 +105,10 @@ class CampaignsImporterTest extends TestCase
         $this->assertEquals($csvOutput, trim($contents));
     }
 
+    /**
+     * Provides test cases for JSON write (testWrite)
+     * @return array
+     */
     public function providerTraffic()
     {
         return [

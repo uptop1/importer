@@ -8,4 +8,5 @@ use Command\ImportCommand;
 
 $application = new Application();
 $application->add(new ImportCommand);
+$application->setDefaultCommand('import', true);
 $application->run();

@@ -141,7 +141,7 @@
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#32"><abbr title="read(): \Iterator">read</abbr></a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#36"><abbr title="read(): \Iterator">read</abbr></a></td>
       <td class="success big">       <div class="progress">
          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" style="width: 100.00%">
            <span class="sr-only">100.00% covered (success)</span>
@@ -157,7 +157,7 @@
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#34"><abbr title="write(WriterInterface $writer, Traffic $data): bool">write</abbr></a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#44"><abbr title="write(WriterInterface $writer, Traffic $data): bool">write</abbr></a></td>
       <td class="success big">       <div class="progress">
          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" style="width: 100.00%">
            <span class="sr-only">100.00% covered (success)</span>
@@ -208,10 +208,20 @@
      <tr class="covered-by-large-tests popin" data-title="1 test covers line 29" data-content="&lt;ul&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\CampaignsImporterTest::testRead with data set #0&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="29"></a><a href="#29">29</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="default">-&gt;</span><span class="default">reader</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="default">$reader</span><span class="keyword">;</span></td></tr>
      <tr class="covered-by-large-tests popin" data-title="1 test covers line 30" data-content="&lt;ul&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;Tests\CampaignsImporterTest::testRead with data set #0&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="30"></a><a href="#30">30</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">}</span></td></tr>
      <tr><td><div align="right"><a name="31"></a><a href="#31">31</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="32"></a><a href="#32">32</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">abstract</span><span class="default">&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">read</span><span class="keyword">(</span><span class="keyword">)</span><span class="keyword">:</span><span class="default">&nbsp;</span><span class="default">\</span><span class="default">Iterator</span><span class="keyword">;</span></td></tr>
-     <tr><td><div align="right"><a name="33"></a><a href="#33">33</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="34"></a><a href="#34">34</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">abstract</span><span class="default">&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">write</span><span class="keyword">(</span><span class="default">WriterInterface</span><span class="default">&nbsp;</span><span class="default">$writer</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="default">Traffic</span><span class="default">&nbsp;</span><span class="default">$data</span><span class="keyword">)</span><span class="keyword">:</span><span class="default">&nbsp;</span><span class="default">bool</span><span class="keyword">;</span></td></tr>
-     <tr><td><div align="right"><a name="35"></a><a href="#35">35</a></div></td><td class="codeLine"><span class="keyword">}</span></td></tr>
+     <tr><td><div align="right"><a name="32"></a><a href="#32">32</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/**</span></td></tr>
+     <tr><td><div align="right"><a name="33"></a><a href="#33">33</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Gets&nbsp;the&nbsp;data&nbsp;from&nbsp;the&nbsp;specified&nbsp;reader</span></td></tr>
+     <tr><td><div align="right"><a name="34"></a><a href="#34">34</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;\Iterator</span></td></tr>
+     <tr><td><div align="right"><a name="35"></a><a href="#35">35</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></td></tr>
+     <tr><td><div align="right"><a name="36"></a><a href="#36">36</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">abstract</span><span class="default">&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">read</span><span class="keyword">(</span><span class="keyword">)</span><span class="keyword">:</span><span class="default">&nbsp;</span><span class="default">\</span><span class="default">Iterator</span><span class="keyword">;</span></td></tr>
+     <tr><td><div align="right"><a name="37"></a><a href="#37">37</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="38"></a><a href="#38">38</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/**</span></td></tr>
+     <tr><td><div align="right"><a name="39"></a><a href="#39">39</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Writes&nbsp;traffic&nbsp;data&nbsp;into&nbsp;the&nbsp;specified&nbsp;output</span></td></tr>
+     <tr><td><div align="right"><a name="40"></a><a href="#40">40</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;WriterInterface&nbsp;The&nbsp;writer&nbsp;which&nbsp;stores&nbsp;the&nbsp;data</span></td></tr>
+     <tr><td><div align="right"><a name="41"></a><a href="#41">41</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;Traffic&nbsp;Data&nbsp;to&nbsp;be&nbsp;stored</span></td></tr>
+     <tr><td><div align="right"><a name="42"></a><a href="#42">42</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;bool&nbsp;True&nbsp;when&nbsp;succeeded,&nbsp;False&nbsp;otherwise</span></td></tr>
+     <tr><td><div align="right"><a name="43"></a><a href="#43">43</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></td></tr>
+     <tr><td><div align="right"><a name="44"></a><a href="#44">44</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">abstract</span><span class="default">&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">write</span><span class="keyword">(</span><span class="default">WriterInterface</span><span class="default">&nbsp;</span><span class="default">$writer</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="default">Traffic</span><span class="default">&nbsp;</span><span class="default">$data</span><span class="keyword">)</span><span class="keyword">:</span><span class="default">&nbsp;</span><span class="default">bool</span><span class="keyword">;</span></td></tr>
+     <tr><td><div align="right"><a name="45"></a><a href="#45">45</a></div></td><td class="codeLine"><span class="keyword">}</span></td></tr>
 
     </tbody>
    </table>
@@ -224,7 +234,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.0.3</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.15-0ubuntu0.16.04.4</a> with <a href="https://xdebug.org/">Xdebug 2.4.0</a> and <a href="https://phpunit.de/">PHPUnit 6.0.9</a> at Sun Apr 9 0:15:43 EEST 2017.</small>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.0.3</a> using <a href="https://secure.php.net/" target="_top">PHP 7.0.15-0ubuntu0.16.04.4</a> with <a href="https://xdebug.org/">Xdebug 2.4.0</a> and <a href="https://phpunit.de/">PHPUnit 6.0.9</a> at Sun Apr 9 1:05:09 EEST 2017.</small>
     </p>
     <a title="Back to the top" id="toplink" href="#"><span class="glyphicon glyphicon-arrow-up"></span></a>
    </footer>

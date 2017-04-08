@@ -13,8 +13,14 @@ use PHPUnit\Framework\TestCase;
 
 class CSVWriterTest extends TestCase
 {
+    /**
+     * @var \org\bovigo\vfs\vfsStreamDirectory
+     */
     private $root;
 
+    /**
+     * Set filesystem mock before test cases
+     */
     public function setUp() {
         $this->root = vfsStream::setup('tmp');
     }
@@ -53,6 +59,10 @@ class CSVWriterTest extends TestCase
         $this->assertEquals($csvOutput, trim($contents));
     }
 
+    /**
+     * Provides test cases for CSV write (testWriteTrafficToCSV)
+     * @return array
+     */
     public function providerTraffic()
     {
         return [

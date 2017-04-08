@@ -13,8 +13,14 @@ use PHPUnit\Framework\TestCase;
 
 class JSONWriterTest extends TestCase
 {
+    /**
+     * @var \org\bovigo\vfs\vfsStreamDirectory
+     */
     private $root;
 
+    /**
+     * Set filesystem mock before test cases
+     */
     public function setUp() {
         $this->root = vfsStream::setup('tmp');
     }
@@ -53,6 +59,10 @@ class JSONWriterTest extends TestCase
         $this->assertEquals($jsonOutput, trim($contents));
     }
 
+    /**
+     * Provides test cases for JSON write (testWriteTrafficToJSON)
+     * @return array
+     */
     public function providerTraffic()
     {
         return [
